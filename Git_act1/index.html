@@ -6,7 +6,175 @@
     <title>Cayanga, Erlie May R.</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+     body {
+        background: #ffffff;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+.right-bg {
+    position: absolute;
+    width: 90%;
+    height: 200%;
+    background-image: linear-gradient(to left, #ffc9df, rgb(255, 162, 216));
+    transform: rotate(30deg);
+    top: -100px;
+    left: 47.5%;
+    clip-path: inset(0 0 0 0);
+    z-index: -1;
+}
+
+.diagonal-bar {
+    position: absolute;
+    width: 120px;
+    height: 700px;
+    background: #f5b7d1;
+    transform: rotate(30deg);
+    z-index: 1;
+    box-shadow:0 8px 20px 0 rgba(0,0,0,0.6);
+}
+
+.diagonal-bar.top {
+    top: -100px;
+    left: 52%;
+}
+
+.diagonal-bar.bottom {
+    bottom: -100px;
+    left: 43%;
+}
+
+    img.cat {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border-color: #d0b8c4;
+        border-style: solid;
+        box-shadow:0 8px 20px 0 rgba(0,0,0,0.6);
+        top: 50%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    
+
+
+    #div2 {
+        position: absolute;
+        top: 30px;
+        left: 490px;
+        padding-top: 20px;
+        padding-left: 2%;
+        padding-right: 10%;
+        border-radius: 25px;
+        background-color: rgba(253, 239, 246, 0.36);
+        height: 270px;
+        width: 600px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 40px;
+        letter-spacing: 2px;
+        line-height: 1.7;  
+        z-index: -2;
+    }
+
+    #div3 {
+        position: absolute;
+        bottom: 45%;
+        left: 350px;
+        padding-top: 10px;
+        padding-left: 2%;
+        padding-right: 7%;
+        margin: 10px;
+        border-radius: 25px;
+        background-color: rgba(253, 239, 246, 0.32);
+        height: 100px;
+        width: 550px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+        letter-spacing: 2px;
+        line-height: 1.7;  
+        z-index: -2;
+    }
+
+    #div4 {
+        position: absolute;
+        bottom: 7%;
+        left: 250px;
+        padding: 20px 30px;
+        padding-right: 10px;
+        margin: 10px;
+        border-radius: 25px;
+        background-color: rgba(253, 239, 246, 0.394);
+        height: 250px;
+        width: 750px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+        letter-spacing: 2px;
+        line-height: 1.7;  
+        z-index: -2;
+    }
+
+    img.center {
+        position: absolute;
+        height: 1200px;
+        width: 1200px;
+        right: 31%; 
+        top:-1%;
+        z-index: -3;
+    }
+
+    h1 {
+        position: absolute;
+        font-family: 'Times New Roman', Times, serif;
+        z-index: 1;
+        right: 10%;
+        top: 46%;
+        font-size: 70px;
+    }
+
+</style>
 <body>
-    <p>This is a Paragraph.</p>
-</body>     
+<img class="cat" src="Meow1.jpg" Alt="Meow">
+<div class="container">
+    <div class="left-block"></div>
+    <div class="center-circle"></div>
+    <div class="diagonal-bar top"></div>
+    <div class="diagonal-bar bottom"></div>
+    <div class="right-bg"></div>
+</div>
+
+<div id="div2">
+    <p style="text-align: center;"><strong>Live the life you Love, Love the life you Live</strong></p>
+</div>
+
+<div id="div3">
+    <p><strong>Visit our website if needed help</strong></p>
+</div>
+
+<div id="div4">
+    <p><strong>Contacts</strong><br>
+    MindCare Counseling Center<br>
+    (555) 210-4587<br>
+    Baguio City<br>
+    Mon–Fri | 9:00 AM – 6:00 PM</p>
+</div>
+
+<h1><em>Mental Health<br> Matters</em></h1>
+
+<img class="center" src="Therapy.jpg" alt="Getting Therapy">
+
+</body>
 </html>
